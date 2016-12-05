@@ -179,10 +179,10 @@ class listener implements EventSubscriberInterface
 		// Output the data vars to the template
 		$this->user->add_lang_ext('tatiana5/popuppm', 'info_acp_popuppm');
 		$this->template->assign_vars(array(
-			'POPUPPM_ENABLE_POPUP'		=> ($this->config['popuppm_enable_popup']) ? true : false,
+			'POPUPPM_UCP_ENABLE_POPUP'		=> ($this->config['popuppm_enable_popup']) ? true : false,
 			'S_PM_ENABLE_POPUP'         => $data['popuppm_user_popup'],
 			
-			'POPUPPM_ENABLE_BLINK'		=> ($this->config['popuppm_enable_blink']) ? true : false,
+			'POPUPPM_UCP_ENABLE_BLINK'		=> ($this->config['popuppm_enable_blink']) ? true : false,
 			'S_PM_ENABLE_BLINK'         => $data['popuppm_user_blink'],
 		));
 
