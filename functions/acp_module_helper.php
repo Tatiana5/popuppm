@@ -228,7 +228,7 @@ abstract class acp_module_helper
 	{
 		$this->template->assign_vars([
 			'L_TITLE'         => $this->user->lang[$this->display_vars['title']],
-			'L_TITLE_EXPLAIN' => $this->user->lang[$this->display_vars['title'] . '_EXPLAIN'],
+			'L_TITLE_EXPLAIN' => ($this->user->lang[$this->display_vars['title'] . '_EXPLAIN']) ?? '',
 
 			'S_ERROR'   => (sizeof($this->error)) ? true : false,
 			'ERROR_MSG' => implode('<br />', $this->error),
